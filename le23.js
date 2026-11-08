@@ -112,6 +112,18 @@
     'Laurent et Viviane mettront cette rubrique à jour au fil des évolutions de l’appartement, pour que vous disposiez des informations les plus récentes avant et pendant votre séjour.':'Laurent and Viviane will update this section as the apartment evolves, so you have the latest information before and during your stay.',
     'À portée de main':'At a glance', 'Infos pratiques':'Practical information'
   });
+  Object.assign(fullEnglishTranslations, {
+    '7 emplacements pour vos photos':'7 photo slots', 'Votre appartement':'Your apartment', 'Remplacez cette image par votre photo.':'Replace this image with your photo.', 'Salon':'Living room', 'Cuisine':'Kitchen', 'Chambre':'Bedroom', 'Lits superposés':'Bunk beds', 'Salle de bains':'Bathroom', 'Balcon':'Balcony', 'Vue extérieure':'Exterior view',
+    'Machine à laver':'Washing machine', 'À compléter':'To be completed', 'Radiateur':'Heater', 'Chauffage':'Heating',
+    'Marque à compléter':'Brand to be completed', 'Chargez le linge':'Load the laundry', 'Ne surchargez pas le tambour et vérifiez les poches avant de fermer le hublot.':'Do not overload the drum and check the pockets before closing the door.',
+    'Ajoutez la lessive':'Add detergent', "Placez la lessive dans le bac prévu à cet effet et ajoutez éventuellement l'adoucissant.":'Put detergent in the appropriate drawer and add fabric softener if needed.',
+    'Sélectionnez le programme adapté au linge, puis vérifiez la température avant de lancer le cycle.':'Choose the right programme for the laundry, then check the temperature before starting the cycle.',
+    'Vérifiez que le hublot est bien fermé.':'Check that the door is properly closed.', 'Laissez le hublot entrouvert après utilisation pour aérer le tambour.':'Leave the door slightly open after use to air the drum.',
+    'Radiateur':'Heater', 'Allumez':'Switch on', 'Utilisez le bouton ou le thermostat du radiateur pour le mettre en marche.':'Use the radiator button or thermostat to switch it on.',
+    'Choisissez une température confortable et évitez de régler le chauffage au maximum.':'Choose a comfortable temperature and avoid setting the heating to maximum.',
+    'Avant de partir':'Before you leave', 'Ramenez le réglage à une température basse et vérifiez que rien ne couvre le radiateur.':'Set it to a low temperature and make sure nothing is covering the radiator.',
+    'Ne couvrez jamais le radiateur et ne placez pas de meuble ou de linge contre lui.':'Never cover the radiator or place furniture or laundry against it.'
+  });
   function translateAllText(lang) {
     document.querySelectorAll('body *').forEach(function (el) { Array.prototype.forEach.call(el.childNodes, function (node) {
       if (node.nodeType !== 3) return;
@@ -376,7 +388,7 @@
   var gate = document.getElementById('language-gate');
   if (!gate) return;
   var completed = false;
-  try { completed = localStorage.getItem('le23-language-choice-v2') === 'done'; } catch (e) {}
+  try { completed = localStorage.getItem('le23-language-choice-v3') === 'done'; } catch (e) {}
   if (completed) {
     document.documentElement.setAttribute('data-language-gate', 'done');
     gate.hidden = true;
@@ -387,7 +399,7 @@
       var language = button.getAttribute('data-language-choice');
       var languageButton = document.querySelector('[data-lang-btn="' + language + '"]');
       if (languageButton) languageButton.click();
-      try { localStorage.setItem('le23-language-choice-v2', 'done'); } catch (e) {}
+      try { localStorage.setItem('le23-language-choice-v3', 'done'); } catch (e) {}
       document.documentElement.setAttribute('data-language-gate', 'done');
       gate.hidden = true;
       var main = document.querySelector('main');

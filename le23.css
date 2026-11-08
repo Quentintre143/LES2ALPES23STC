@@ -234,6 +234,10 @@ body.photo-changing::before { opacity: 0; }
 .tab[aria-selected="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .tab[aria-selected="true"] small { color: color-mix(in srgb, var(--on-accent) 80%, transparent); }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 32px; min-width: 0; display: grid; gap: 20px; }
+.appliance-heading { display: grid; gap: 18px; }
+.appliance-heading img { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; border-radius: 14px; border: 1px solid var(--line); background: var(--brass-soft); }
+.appliance-heading h3 { margin: 0; font-size: clamp(30px, 4vw, 46px); line-height: 1; font-weight: 800; }
+
 .panel h3 { font-size: 28px; font-weight: 800; }
 .panel .brandtag { font-family: var(--font-mono); font-size: 13px; color: var(--muted); display: block; margin-top: 6px; }
 .mini-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: s; }

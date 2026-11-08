@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="Guide pratique de l’appartement 23 : arrivée, équipements, règles et informations utiles." name="description"/><title>Le logement — Le 23 · Appartement 23</title><script>try { if (localStorage.getItem('le23-language-choice-v2') === 'done') document.documentElement.setAttribute('data-language-gate', 'done'); } catch (e) {}</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=DM+Mono:wght@500&amp;display=swap" rel="stylesheet"/><script src="le23-season.js"></script><link href="le23.css" rel="stylesheet"/></head><body><div aria-describedby="language-gate-description" aria-labelledby="language-gate-title" aria-modal="true" class="language-gate" id="language-gate" role="dialog"><div class="language-gate-card"><p class="eyebrow">Le 23 · Les Deux Alpes</p><h2 id="language-gate-title">Choisissez votre langue</h2><p id="language-gate-description">Sélectionnez la langue à utiliser sur le site.</p><div class="language-gate-actions"><button data-language-choice="fr" type="button">Français</button><button data-language-choice="en" type="button">English</button></div></div></div><header class="hero page-hero" data-page="apartment" id="top">
+<html data-theme="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="Guide pratique de l’appartement 23 : arrivée, équipements, règles et informations utiles." name="description"/><title>Le logement — Le 23 · Appartement 23</title><script>try { if (localStorage.getItem('le23-language-choice-v3') === 'done') document.documentElement.setAttribute('data-language-gate', 'done'); } catch (e) {}</script><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Instrument+Sans:wght@400;500;600&amp;family=DM+Mono:wght@500&amp;display=swap" rel="stylesheet"/><script src="le23-season.js"></script><link href="le23.css" rel="stylesheet"/></head><body><div aria-describedby="language-gate-description" aria-labelledby="language-gate-title" aria-modal="true" class="language-gate" id="language-gate" role="dialog"><div class="language-gate-card"><p class="eyebrow">Le 23 · Les Deux Alpes</p><h2 id="language-gate-title">Choisissez votre langue</h2><p id="language-gate-description">Sélectionnez la langue à utiliser sur le site.</p><div class="language-gate-actions"><button data-language-choice="fr" type="button">Français</button><button data-language-choice="en" type="button">English</button></div></div></div><header class="hero page-hero" data-page="apartment" id="top">
 <canvas aria-hidden="true" id="fx"></canvas>
 <svg aria-hidden="true" class="ridges" preserveaspectratio="none" viewbox="0 0 1440 150">
 <path d="M0,95 L110,48 L200,80 L320,22 L440,84 L550,52 L690,104 L830,38 L950,88 L1090,30 L1220,86 L1330,56 L1440,92 L1440,150 L0,150 Z" fill="var(--r1)"></path>
@@ -156,10 +156,12 @@
 <button aria-controls="p-frigo" aria-selected="false" class="tab" id="t-frigo" role="tab" tabindex="-1"><span>Frigo et congélateur</span><small>SMEG</small></button>
 <button aria-controls="p-tv" aria-selected="false" class="tab" id="t-tv" role="tab" tabindex="-1"><span>Télé et décodeur</span><small>TCL et Orange</small></button>
 <button aria-controls="p-seche" aria-selected="false" class="tab" id="t-seche" role="tab" tabindex="-1"><span>Sèche-chaussures &amp; gants</span><small>Catégorie dédiée</small></button>
+<button aria-controls="p-linge" aria-selected="false" class="tab" id="t-linge" role="tab" tabindex="-1"><span>Machine à laver</span><small>À compléter</small></button>
+<button aria-controls="p-radiateur" aria-selected="false" class="tab" id="t-radiateur" role="tab" tabindex="-1"><span>Radiateur</span><small>Chauffage</small></button>
 </div>
 <div>
 <section aria-labelledby="t-wifi" class="panel" id="p-wifi" role="tabpanel">
-<div><h3>Wi-Fi</h3><span class="brandtag">Livebox</span></div>
+<div class="appliance-heading"><img src="appareil-wifi.svg" alt="Illustration générique du Wi-Fi à remplacer"/><div><h3>Wi-Fi</h3><span class="brandtag">Livebox</span></div></div>
 <div class="wifi-box">
 <div class="wifi-row"><div><small>Nom du réseau (SSID)</small><span class="val">Livebox-1ED0</span></div><button class="btn ghost" data-copy="Livebox-1ED0" type="button">Copier</button></div>
 <div class="wifi-row"><div><small>Mot de passe</small><span class="val">fcsJufKAWCWhVZ9MF2</span></div><button class="btn" data-copy="fcsJufKAWCWhVZ9MF2" type="button">Copier</button></div>
@@ -167,7 +169,7 @@
 <div class="tip"><b>Astuce</b><span>Connectez-vous rapidement en flashant le QR code dédié affiché dans l'appartement.</span></div>
 </section>
 <section aria-labelledby="t-lv" class="panel" hidden="" id="p-lv" role="tabpanel">
-<div><h3>Lave-vaisselle</h3><span class="brandtag">Candy Rapido'</span></div>
+<div class="appliance-heading"><img src="appareil-lave-vaisselle.svg" alt="Illustration générique du lave-vaisselle à remplacer"/><div><h3>Lave-vaisselle</h3><span class="brandtag">Candy Rapido'</span></div></div>
 <ol class="mini-steps">
 <li><div><b>Allumez</b><span>Appuyez sur le bouton Marche/Arrêt, tout à gauche du bandeau.</span></div></li>
 <li><div><b>Ajoutez le produit</b><span>Placez la pastille de lavage dans le bac à l'intérieur de la porte, puis refermez le clapet.</span></div></li>
@@ -178,7 +180,7 @@
 <div class="tip"><b>Astuce</b><span>En cas de mauvaise manipulation, maintenez la touche Start enfoncée pendant 3 secondes pour réinitialiser le cycle.</span></div>
 </section>
 <section aria-labelledby="t-four" class="panel" hidden="" id="p-four" role="tabpanel">
-<div><h3>Four électrique</h3><span class="brandtag">Electrolux</span></div>
+<div class="appliance-heading"><img src="appareil-four.jpg" alt="Illustration générique du four à remplacer"/><div><h3>Four électrique</h3><span class="brandtag">Electrolux</span></div></div>
 <div>
 <p style="margin-bottom:12px"><b style="color:var(--ink)">Mode de cuisson</b>, bouton de gauche :</p>
 <div class="modes">
@@ -194,7 +196,7 @@
 <div class="tip"><b>Important</b><span>Merci de ne pas activer l'auto-nettoyage (pyrolyse).</span></div>
 </section>
 <section aria-labelledby="t-frigo" class="panel" hidden="" id="p-frigo" role="tabpanel">
-<div><h3>Réfrigérateur et congélateur</h3><span class="brandtag">SMEG</span></div>
+<div class="appliance-heading"><img src="appareil-frigo.jpg" alt="Illustration générique du réfrigérateur à remplacer"/><div><h3>Réfrigérateur et congélateur</h3><span class="brandtag">SMEG</span></div></div>
 <div class="stats">
 <div class="stat"><b>4 °C</b><span>Réfrigérateur</span></div>
 <div class="stat"><b>−18 °C</b><span>Congélateur</span></div>
@@ -207,7 +209,7 @@
 <div class="tip"><b>Bonne pratique</b><span>Ne collez pas les aliments directement contre les parois du fond.</span></div>
 </section>
 <section aria-labelledby="t-tv" class="panel" hidden="" id="p-tv" role="tabpanel">
-<div><h3>Télévision et décodeur</h3><span class="brandtag">TCL et Orange</span></div>
+<div class="appliance-heading"><img src="appareil-tele.jpg" alt="Illustration générique de la télévision à remplacer"/><div><h3>Télévision et décodeur</h3><span class="brandtag">TCL et Orange</span></div></div>
 <ol class="mini-steps">
 <li><div><b>Allumez la télé</b><span>Avec la télécommande TCL, touche marche/arrêt.</span></div></li>
 <li><div><b>Allumez le décodeur</b><span>Avec la télécommande Orange, touche marche/arrêt.</span></div></li>
@@ -216,13 +218,32 @@
 <div class="tip"><b>Pas de signal ou écran noir ?</b><span>Appuyez sur la touche Source (Input) de la télécommande TCL et sélectionnez HDMI 1.</span></div>
 </section>
 <section aria-labelledby="t-seche" class="panel" hidden="" id="p-seche" role="tabpanel">
-<div><h3>Sèche-chaussures et gants</h3><span class="brandtag">Séchage mural avec minuterie</span></div>
+<div class="appliance-heading"><img src="appareil-seche-chaussures.jpg" alt="Illustration générique du sèche-chaussures à remplacer"/><div><h3>Sèche-chaussures et gants</h3><span class="brandtag">Séchage mural avec minuterie</span></div></div>
 <ol class="mini-steps">
 <li><div><b>Installez</b><span>Insérez les chaussures de ski ou les gants sur les tubes verticaux, pointe vers le haut.</span></div></li>
 <li><div><b>Mettez sous tension</b><span>Actionnez l'interrupteur latéral On/Off. Le voyant LED rouge s'allume.</span></div></li>
 <li><div><b>Réglez la minuterie</b><span>Durée recommandée de 2 à 3 heures après la skiade, idéalement sur les heures creuses (1 h 10 – 6 h 40 ou 14 h 40 – 17 h 10).</span></div></li>
 </ol>
 <div class="tip"><b>Règle d'or</b><span>Consommation douce de 20 W par paire. Merci de ne pas modifier les réglages de base de la minuterie.</span></div>
+</section>
+<section aria-labelledby="t-linge" class="panel" hidden="" id="p-linge" role="tabpanel">
+<div class="appliance-heading"><img src="appareil-machine-a-laver.jpg" alt="Illustration générique de la machine à laver à remplacer"/><div><h3>Machine à laver</h3><span class="brandtag">Marque à compléter</span></div></div>
+<ol class="mini-steps">
+<li><div><b>Chargez le linge</b><span>Ne surchargez pas le tambour et vérifiez les poches avant de fermer le hublot.</span></div></li>
+<li><div><b>Ajoutez la lessive</b><span>Placez la lessive dans le bac prévu à cet effet et ajoutez éventuellement l'adoucissant.</span></div></li>
+<li><div><b>Choisissez le programme</b><span>Sélectionnez le programme adapté au linge, puis vérifiez la température avant de lancer le cycle.</span></div></li>
+<li><div><b>Lancez le cycle</b><span>Appuyez sur Start et vérifiez que le hublot est bien fermé.</span></div></li>
+</ol>
+<div class="tip"><b>Astuce</b><span>Laissez le hublot entrouvert après utilisation pour aérer le tambour.</span></div>
+</section>
+<section aria-labelledby="t-radiateur" class="panel" hidden="" id="p-radiateur" role="tabpanel">
+<div class="appliance-heading"><img src="appareil-radiateur.jpg" alt="Illustration générique du radiateur à remplacer"/><div><h3>Radiateur</h3><span class="brandtag">Chauffage</span></div></div>
+<ol class="mini-steps">
+<li><div><b>Allumez</b><span>Utilisez le bouton ou le thermostat du radiateur pour le mettre en marche.</span></div></li>
+<li><div><b>Réglez la température</b><span>Choisissez une température confortable et évitez de régler le chauffage au maximum.</span></div></li>
+<li><div><b>Avant de partir</b><span>Ramenez le réglage à une température basse et vérifiez que rien ne couvre le radiateur.</span></div></li>
+</ol>
+<div class="tip"><b>Important</b><span>Ne couvrez jamais le radiateur et ne placez pas de meuble ou de linge contre lui.</span></div>
 </section>
 </div>
 </div>

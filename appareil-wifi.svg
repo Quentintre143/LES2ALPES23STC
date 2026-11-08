@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Wi-Fi</title><desc id="desc">Illustration générique à remplacer par une photo de l'appareil.</desc>
+<rect width="960" height="480" rx="32" fill="#315c52"/><circle cx="800" cy="90" r="180" fill="#d9c39a" opacity=".12"/>
+<text x="70" y="85" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="4">LE 23 · APPARTEMENT 23</text>
+<path d="M330 190 Q480 70 630 190 M370 240 Q480 150 590 240 M425 290 Q480 245 535 290" fill="none" stroke="#d9c39a" stroke-width="22" stroke-linecap="round"/><circle cx="480" cy="345" r="16" fill="#d9c39a"/>
+<text x="70" y="420" fill="#fff" font-family="Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="2">WI-FI</text>
+</svg>
