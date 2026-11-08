@@ -376,7 +376,7 @@
   var gate = document.getElementById('language-gate');
   if (!gate) return;
   var completed = false;
-  try { completed = localStorage.getItem('le23-language-choice-v1') === 'done'; } catch (e) {}
+  try { completed = localStorage.getItem('le23-language-choice-v2') === 'done'; } catch (e) {}
   if (completed) {
     document.documentElement.setAttribute('data-language-gate', 'done');
     gate.hidden = true;
@@ -387,7 +387,7 @@
       var language = button.getAttribute('data-language-choice');
       var languageButton = document.querySelector('[data-lang-btn="' + language + '"]');
       if (languageButton) languageButton.click();
-      try { localStorage.setItem('le23-language-choice-v1', 'done'); } catch (e) {}
+      try { localStorage.setItem('le23-language-choice-v2', 'done'); } catch (e) {}
       document.documentElement.setAttribute('data-language-gate', 'done');
       gate.hidden = true;
       var main = document.querySelector('main');
